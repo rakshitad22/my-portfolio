@@ -6,137 +6,63 @@
   <title>Rakshita D | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="dark">
 
-  <!-- Loader Screen -->
+  <!-- Loader -->
   <div id="loader">
-    <h1 class="loader-name">Rakshita D</h1>
-    <div class="progress-box">
-      <div class="progress-bar" id="progress-bar"></div>
+    <div class="circle-loader">
+      <svg width="180" height="180">
+        <circle cx="90" cy="90" r="80" class="circle-bg" />
+        <circle
+          cx="90"
+          cy="90"
+          r="80"
+          class="circle-progress"
+          id="progress-circle"
+        />
+      </svg>
+      <div class="circle-text">
+        <h2>Rakshita D</h2>
+        <p><span id="loading-count">1</span>%</p>
+      </div>
     </div>
-    <p class="loading-text">Loading <span id="loading-count">1</span>%</p>
   </div>
 
-  <!-- Main Content (hidden until loading completes) -->
-  <div id="main-content" style="display: none;">
+  <!-- Main Content -->
+  <div id="main-content" class="hidden">
 
     <!-- Navbar -->
     <header class="navbar">
       <div class="nav-container">
-        <div class="logo">Rakshita D</div>
-        <nav>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <h1 class="logo">Rakshita D</h1>
+        <div class="nav-right">
+          <button id="theme-toggle">🌙</button>
+        </div>
       </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
-      <div class="hero-content">
-        <img src="profile.jpg" alt="Rakshita D" class="profile-img" />
-        <p class="tagline">Information Science Engineering Student</p>
-        <h1>Hi, I'm <span>Rakshita</span></h1>
-        <p class="subtitle">
-          I build clean and user-friendly web interfaces and have hands-on experience
-          with Java, Python, and frontend technologies. I am passionate about data
-          analytics and visualization and enjoy transforming data into clear,
-          actionable insights.
-        </p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary">View My Projects</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
-        </div>
-      </div>
+      <h2>Hi, I'm <span>Rakshita</span></h2>
+      <p>
+        I build clean, user-friendly web interfaces and enjoy working with
+        Java, Python, frontend development, data analytics, and visualization.
+      </p>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>
-          I'm an Information Science Engineering student with a strong interest in
-          software development and data-driven technologies. I enjoy working with
-          Java, Python, HTML, CSS, and JavaScript to build clean and user-friendly
-          applications. I am curious by nature and love learning new technologies
-          and tools that help me grow as a developer.
-          <br /><br />
-          Beyond academics, I enjoy singing, which helps me stay creative and
-          expressive. I believe continuous learning and adaptability are key to
-          personal and professional growth, and I strive to improve my skills every day.
-        </p>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section alt">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card">HTML</div>
-          <div class="skill-card">CSS</div>
-          <div class="skill-card">JavaScript</div>
-          <div class="skill-card">React (Learning)</div>
-          <div class="skill-card">Java</div>
-          <div class="skill-card">Python</div>
-          <div class="skill-card">SQL / DBMS</div>
-          <div class="skill-card">Git & GitHub</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-
-          <div class="project-card">
-            <h3>Flight Management System</h3>
-            <p>
-              A DBMS mini project to manage flights, passengers, and bookings using
-              SQL and relational database concepts.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <h3>Healthcare Appointment System</h3>
-            <p>
-              Designed a system to schedule and manage patient appointments,
-              focusing on database design and queries.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <h3>Calculator App (Web)</h3>
-            <p>
-              A simple, responsive calculator built using HTML, CSS, and JavaScript,
-              deployed on AWS (college assignment).
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>If you'd like to connect, collaborate, or just say hi, feel free to reach out!</p>
-        <p class="contact-details">
-          📩 Email: <a href="mailto:rakshitad76@gmail.com">rakshitad76@gmail.com</a><br />
-          💼 LinkedIn: <a href="#" target="_blank">Rakshita D</a><br />
-          🐙 GitHub: <a href="#" target="_blank">rakshitad22</a>
-        </p>
-      </div>
+    <!-- About -->
+    <section class="section">
+      <h3>Who I Am</h3>
+      <p>
+        I'm an Information Science Engineering student passionate about software
+        development and data-driven technologies. I enjoy learning new tools and
+        technologies and love singing, which keeps me creative and curious.
+      </p>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-      <p>© <span id="year"></span> Rakshita D. All rights reserved.</p>
+    <footer>
+      © <span id="year"></span> Rakshita D
     </footer>
 
   </div>
