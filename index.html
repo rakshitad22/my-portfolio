@@ -6,61 +6,98 @@
   <title>Rakshita D | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="dark">
+<body>
 
   <!-- Loader -->
   <div id="loader">
-    <div class="circle-loader">
-      <svg width="180" height="180">
-        <circle cx="90" cy="90" r="80" class="circle-bg" />
-        <circle
-          cx="90"
-          cy="90"
-          r="80"
-          class="circle-progress"
-          id="progress-circle"
-        />
+    <div class="loader-circle">
+      <svg width="160" height="160">
+        <circle cx="80" cy="80" r="70" class="bg" />
+        <circle cx="80" cy="80" r="70" class="progress" id="circle" />
       </svg>
-      <div class="circle-text">
+      <div class="loader-text">
         <h2>Rakshita D</h2>
-        <p><span id="loading-count">1</span>%</p>
+        <p><span id="count">1</span>%</p>
       </div>
     </div>
   </div>
 
-  <!-- Main Content -->
-  <div id="main-content" class="hidden">
+  <!-- Main -->
+  <div id="main" class="hidden">
 
-    <!-- Navbar -->
     <header class="navbar">
-      <div class="nav-container">
-        <h1 class="logo">Rakshita D</h1>
-        <div class="nav-right">
-          <button id="theme-toggle">🌙</button>
-        </div>
-      </div>
+      <h1>Rakshita D</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-    <!-- Hero -->
     <section class="hero">
-      <h2>Hi, I'm <span>Rakshita</span></h2>
+      <h2>
+        Building <span>clean</span> & <span>useful</span> digital experiences
+      </h2>
       <p>
-        I build clean, user-friendly web interfaces and enjoy working with
-        Java, Python, frontend development, data analytics, and visualization.
+        Information Science Engineering student focused on frontend development,
+        Java, Python, and data-driven applications.
       </p>
     </section>
 
-    <!-- About -->
-    <section class="section">
-      <h3>Who I Am</h3>
+    <section id="about" class="section">
+      <h3>About</h3>
       <p>
-        I'm an Information Science Engineering student passionate about software
-        development and data-driven technologies. I enjoy learning new tools and
-        technologies and love singing, which keeps me creative and curious.
+        I'm an Information Science Engineering student passionate about building
+        simple, intuitive, and user-friendly applications. I enjoy working with
+        frontend technologies, Java, Python, and database systems. I love
+        learning new things and enjoy singing, which keeps me creative.
       </p>
     </section>
 
-    <!-- Footer -->
+    <section id="projects" class="section">
+      <h3>Projects</h3>
+
+      <div class="projects">
+
+        <div class="card">
+          <h4>Smart Blind Stick</h4>
+          <p>
+            Assistive technology using ultrasonic sensors to detect obstacles
+            and help visually impaired users navigate safely.
+          </p>
+          <span>Ultrasonic Sensors · Embedded Systems</span>
+        </div>
+
+        <div class="card">
+          <h4>To-Do List (Frontend GUI)</h4>
+          <p>
+            A clean and responsive to-do list application built using frontend
+            technologies with focus on usability.
+          </p>
+          <span>HTML · CSS · JavaScript</span>
+        </div>
+
+        <div class="card">
+          <h4>IndiaAssist</h4>
+          <p>
+            A travel and safety companion app designed to assist users with
+            travel planning, safety features, and local assistance across India.
+          </p>
+          <span>Frontend · APIs · UI/UX</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h3>Contact</h3>
+      <p>
+        📩 rakshitad76@gmail.com <br />
+        💼 LinkedIn Rakshita D<br />
+        🐙 GitHub: rakshitad22
+      </p>
+    </section>
+
     <footer>
       © <span id="year"></span> Rakshita D
     </footer>
