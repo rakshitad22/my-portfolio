@@ -233,3 +233,11 @@ nav a:hover {
     padding: 2.3rem 1rem;
   }
 }
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  border: 3px solid #f97316;
+}
